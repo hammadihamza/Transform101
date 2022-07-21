@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: Tahoma, "sans serif";
+}
+div {
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+}
+.Box1 {
+  background-color: aqua;
+  transition: 2s;
+}
+.Box1:hover {
+  transform: rotate(90deg);
+}
+
+.Box2 {
+  background-color: brown;
+  transition: 2s;
+}
+.Box2:hover {
+  transform: scale(20);
+}
+
+.Box3 {
+  background-color: cornflowerblue;
+  transition: 1s ease-in-out;
+}
+.Box3:hover {
+  transform: translate(0, 2000px);
+}
+.Box4 {
+  background-color: skyblue;
+  transition: 2s;
+  top: 80%;
+}
+.Box4:hover {
+  transform: skew(20deg, 40deg);
+}
+.Box5 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box5 div {
+  background-color: gray;
+  animation: shake 4s infinite;
+}
+.Box6 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box6 div {
+  background-color: rgb(231, 178, 79);
+  animation: Rotation 4s infinite;
+}
+
+.Box7 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box7 div {
+  background-color: rgb(59, 79, 192);
+  animation: Scaling 4s infinite;
+}
+.Box8 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box8 div {
+  background-color: rgb(168, 62, 112);
+  animation: Translation 4s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+@keyframes Rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Scaling {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes Translation {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100px, 0);
+  }
+}
